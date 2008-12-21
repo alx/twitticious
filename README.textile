@@ -1,0 +1,14 @@
+Twitticious allows you to import links from a "twitter":http://twitter.com timeline to your "del.icio.us":http://delicious.com account.
+
+Twitticious doesn't work yet on shared webhost, you can download the project and use it from your computer.
+
+# "Download":http://github.com/alx/twitticious/zipball/asmallorange project on github
+# Launch app: _ruby twitticious.rb_
+# Access to the app from your web browser: "http://localhost:4567":http://localhost:4567
+
+Gem requirement:
+
+* "Sinatra":http://sinatra.rubyforge.org/
+* "rDelicious":http://rdelicious.rubyforge.org/
+
+Project can be forked and watched on GitHub: "http://github.com/alx/twitticious/":http://github.com/alx/twitticious/
