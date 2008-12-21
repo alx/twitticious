@@ -1,0 +1,25 @@
+<html>
+<body>
+<p>Import links from a <a href='http://www.twitter.com'>twitter</a> timeline to your <a href='http://del.icio.us/'>del.icio.us</a> account.</p>
+
+
+<% if @error %>
+  <p style='font-weigth:bold;color:red'><%= error %></p>
+<% end %>
+
+<form action='' method='post' accept-charset='utf-8'>
+    <p><input type='radio' name='twitter_public' value='yes' checked>From public timeline</p>
+    <p><label for='twitter_id'><input type='radio' name='twitter_public' value='no'>From twitter account: </label>
+    <input type='text' name='twitter_id' value='' id='twitter_id'><br><input type='checkbox' name='twitter_friends' value='include' >Include friend network</p>
+    <p><label for='delicious_id'>Delicious ID: </label><input type='text' name='delicious_id' value='' id='delicious_id'></p>
+    <p><label for='delicious_password'>Delicious Password: </label><input type='password' name='delicious_password' value='' id='delicious_password'></p>
+    <p><input type='submit' value='Twitt.icio.us &rarr;'></p>
+</form>
+
+<% if @delicious %>
+  <p><a href='http://del.icio.us/<%= @delicious.delicious_id %>'>Your del.icio.us</a></p>
+<% end %>
+
+<p><small>no database, no logs, no GUI</small><br><a href='http://github.com/alx/twitticious'>project on github</a></p>
+</body>
+</html>
